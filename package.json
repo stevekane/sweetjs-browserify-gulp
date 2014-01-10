@@ -25,9 +25,7 @@
     "gulp": "~3.3.0",
     "gulp-sweetjs": "~0.1.1",
     "gulp-browserify": "~0.2.4",
-    "gulp-concat": "~2.1.7",
-    "through": "~2.3.4",
-    "gulp-util": "~2.2.9"
+    "gulp-concat": "~2.1.7"
   },
   "dependencies": {
     "lodash": "~2.4.1",

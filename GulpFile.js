@@ -6,8 +6,6 @@ var gulp = require('gulp')
   , whereDaMacrosAt = "macros/**/*.js"
   , whereMyStuffGoes = "public/dist"
   , finalScript = "actor.js"
-  , targettedTask = process.argv[2]
-  , calledDirectly = !module.parent;
 
 gulp.task("default", function () {
   gulp.run("scripts");
@@ -27,19 +25,3 @@ gulp.task("scripts", function () {
   .pipe(browserify())
   .pipe(gulp.dest(whereMyStuffGoes));
 });
-
-/*
-for use directly.  You lose gulp's reporting though
-which is pretty sadface.
-*/
-if (calledDirectly) {
-  console.log("calledDirectly");
-  switch (targettedTask) {
-  case "once":
-    gulp.run("once");
-    break;
-  default:
-    gulp.run("default"); 
-    break;
-  };
-};

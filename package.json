@@ -1,0 +1,36 @@
+{
+  "name": "actor",
+  "version": "0.0.1",
+  "description": "This is a framework for building HTML components out of actors",
+  "main": "actor-server.js",
+  "scripts": {
+    "test": "node tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stevekane/actor.git"
+  },
+  "keywords": [
+    "actors",
+    "javascript",
+    "components"
+  ],
+  "author": "Steve Kane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevekane/actor/issues"
+  },
+  "homepage": "https://github.com/stevekane/actor",
+  "devDependencies": {
+    "gulp": "~3.3.0",
+    "gulp-sweetjs": "~0.1.1",
+    "gulp-browserify": "~0.2.4",
+    "gulp-concat": "~2.1.7",
+    "through": "~2.3.4",
+    "gulp-util": "~2.2.9"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "ecstatic": "~0.4.13"
+  }
+}
